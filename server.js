@@ -4,7 +4,7 @@ const app = express()
 
 const catRouter = require('./routes/cats')
 
-app.use('/cats', catRouter)
+app.use('/', catRouter)
 app.set('view engine', 'ejs')
 
 //to start program: `npm run dev`
